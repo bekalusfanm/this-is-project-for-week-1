@@ -1,12 +1,15 @@
-class Student extends Person {
+class Student extends person {
     private String classroom;
+    public Student(boolean parent_permission, int age, String name, int id) {
+        super(age, name, parent_permission, id);
 
-    public Student(String name, String classroom) {
-        super(name);
         this.classroom = classroom;
     }
 
     public String getClassroom() {
         return classroom;
+    }
+
+    public void setClassroom(Classroom classroom) {
     }
 }

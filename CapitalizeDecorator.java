@@ -1,5 +1,5 @@
 class CapitalizeDecorator extends Decorator {
-    public CapitalizeDecorator(Nameable nameable) {
+    public CapitalizeDecorator(person nameable) {
         super(nameable);
     }
 
