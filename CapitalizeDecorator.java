@@ -1,3 +1,4 @@
+
 class CapitalizeDecorator extends Decorator {
     public CapitalizeDecorator(person nameable) {
         super(nameable);

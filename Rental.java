@@ -1,3 +1,4 @@
+
 class Rental {
     private String date;
     private Book book;

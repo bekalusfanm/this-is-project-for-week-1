@@ -1,3 +1,4 @@
+
 class Teacher extends person {
     String specialization;
 

@@ -1,3 +1,4 @@
+
 class Student extends person {
     private String classroom;
     public Student(boolean parent_permission, int age, String name, int id) {

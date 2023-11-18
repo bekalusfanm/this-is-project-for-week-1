@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
         person person = new person(01, "bekalu", true,34);
