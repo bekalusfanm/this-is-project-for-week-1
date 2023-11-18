@@ -1,5 +1,5 @@
 
-public class Teacher extends Person {
+class Teacher extends person {
     String specialization;
 
     public Teacher(String name, int age, boolean parent_permission, String specialization) {
@@ -7,7 +7,6 @@ public class Teacher extends Person {
         this.specialization = specialization;
     }
 
-    @Override
     public boolean serviceuses() {
         return true;
     }

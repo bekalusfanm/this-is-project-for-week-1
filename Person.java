@@ -1,50 +1,74 @@
 
+import java.util.ArrayList;
+import java.util.List;
 
-public class Person {
-    String ID;
-    String Name="unknown";
+class person implements Nameable {
+    String name = "unknown";
     int age;
-    boolean parent_permission=true;
+    int id;
+    boolean parent_permission = true;
 
-    public Person(String name, int age, boolean parent_permission) {
-
-        this.Name = name;
+    public person(int id, String name, boolean parent_permission, int age) {
+        this.id = id;
+        this.name = name;
         this.age = age;
         this.parent_permission = parent_permission;
     }
 
-    public String getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
     public String getName() {
-        return Name;
-    }
-
-    public int getAge() {
-        return age;
+        return name;
     }
 
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
-    private boolean checkage() {
-        if (age >= 18)
+    public int getAge() {
+        return age;
+    }
+
+    private boolean of_age(int age) {
+        if (age >= 18) {
             return true;
-        else {
+        } else {
             return false;
         }
     }
 
-    public boolean serviceuses() {
-        if (checkage() || parent_permission)
+    public boolean canUseServices() {
+        if (age >= 18 || parent_permission) ;
+        {
             return true;
-        else
-            return false;
+        }
+    }
+
+    public String getCorrectName() {
+        return name;
+    }
+
+    private List<Rental> rentals;
+
+    public person(String name, int age, boolean parent_permission) {
+        this.name = name;
+        this.rentals = new ArrayList<>();
+    }
+    public List<Rental> getRentals() {
+        return rentals;
+    }
+
+    public void addRental(Rental rental) {
+    }
+
+    @Override
+    public String correct_name() {
+        return null;
     }
 }

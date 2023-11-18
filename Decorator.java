@@ -1,3 +1,4 @@
+
 class Decorator implements Nameable {
     protected Nameable nameable;
 
